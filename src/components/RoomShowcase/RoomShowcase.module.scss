@@ -1,0 +1,54 @@
+.roomsSection {
+  padding: 3rem 2rem;
+  background-color: transparent;
+  // background-image: url('/assets/background/background_1.webp');
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  color: var(--text-color);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column; // ensures image + content stack
+  background-color: var(--bg-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block; // this ensures the image doesn't have extra spacing
+  }
+
+  h3 {
+    padding: 1rem;
+    font-size: 1.25rem;
+    color: var(--primary-color);
+  }
+
+  p {
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+  }
+}

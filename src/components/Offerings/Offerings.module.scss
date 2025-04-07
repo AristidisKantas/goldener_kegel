@@ -1,0 +1,74 @@
+.offeringsSection {
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+  
+    @media (max-width: 768px) {
+      padding: 2rem 1rem;
+    }
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+  }
+  
+  .offeringsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+  
+  .card {
+    background: white;
+    border: 1px solid var(--border-color, #ddd);
+    border-radius: 0.75rem;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+  
+    p {
+      margin-top: 0.5rem;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+  
+    @media (max-width: 768px) {
+      width: 120px;
+      height: 120px;
+  
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+  
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+  
+  

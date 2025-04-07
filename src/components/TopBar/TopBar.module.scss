@@ -1,0 +1,50 @@
+.topBar {
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+
+  span {
+    display: flex;
+    align-items: center;
+    white-space: nowrap; // Prevent breaking text
+  }
+
+  @media (max-width: 768px) {
+    gap: 1rem; // tighter spacing on mobile
+    font-size: 0.7rem; // shrink text
+    flex-wrap: wrap; // allow wrapping if needed
+    justify-content: center;
+
+    .icon {
+      font-size: 0.65rem; // reduce icon size
+      margin-right: 0.25rem; // reduce spacing
+    }
+  }
+}
+
+.icon {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  color: var(--primary-color);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
