@@ -17,11 +17,10 @@ const Contact = () => {
       </Helmet>
 
       <section className={styles.contactSection} id="contact">
-        <h2>Contact Us</h2>
+        <h2>Kontaktieren Sie uns</h2>
 
         <div className={styles.grid}>
           <div className={styles.details}>
-            <h3>Goldener Kegel</h3>
             <div className={styles.infoStyle}>
               <FaEnvelope className={styles.iconStyle} />
               <span>goldenerkegel@gmail.com</span>

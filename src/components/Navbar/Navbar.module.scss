@@ -11,15 +11,29 @@
 }
 
 .logo {
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+  display: flex;
+  align-items: center;
 
-  .logoText {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--secondary-color); // Explicit color
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+}
+
+.logoIcon {
+  height: 64px; // adjust as needed
+  margin-right: 8px;
+}
+
+.logoText {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--text-color);
+
+  // Hide text on small screens
+  @media (max-width: 768px) {
+    display: none;
   }
 }
 
@@ -64,7 +78,7 @@
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 
   @media (max-width: 768px) {
     display: block;

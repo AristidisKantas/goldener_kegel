@@ -1,0 +1,91 @@
+.kegelSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  background: var(--bg-gradient);
+  padding: 4rem 2rem;
+  border-radius: var(--border-radius);
+  transition: background var(--transition-speed);
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.textContent {
+  color: var(--text-color);
+  font-family: var(--font-body);
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+  }
+
+  .phone {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform var(--transition-speed);
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.headingWithLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; // ensures text aligns with logo center
+  margin-bottom: 1.5rem;
+
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+
+  h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin: 0;
+  }
+}

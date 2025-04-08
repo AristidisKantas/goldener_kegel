@@ -20,6 +20,11 @@ const Navbar = () => {
     <header className={styles.navbar}>
       <div className={styles.logo}>
         <a href="/">
+          <img
+            src="/assets/logo/gold_trans.png"
+            alt="Logo"
+            className={styles.logoIcon}
+          />
           <span className={styles.logoText}>Goldener Kegel</span>
         </a>
       </div>
@@ -42,13 +47,13 @@ const Navbar = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          Home
+          Startseite
         </Link>
-        <a href="/#rooms" onClick={closeMenu}>
-          Book Now
+        <a href="/#kegel-alleys" onClick={closeMenu}>
+          Jetzt buchen
         </a>
         <a href="#contact" onClick={closeMenu}>
-          Contact
+          Kontakt
         </a>
       </nav>
     </header>
