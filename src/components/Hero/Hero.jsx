@@ -21,8 +21,8 @@ const Hero = () => {
             einer Vielfalt an handverlesenen Botanicals. Unsere saisonalen
             Cocktails bringen zu jeder Jahreszeit das gewisse Etwas ins Glas.
           </p>
-          <a href="#rooms" className={styles.cta}>
-            Book Now
+          <a href="#kegel-alleys" className={styles.cta}>
+            Jetzt buchen
           </a>
         </div>
       </section>

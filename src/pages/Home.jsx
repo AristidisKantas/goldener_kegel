@@ -5,12 +5,14 @@ import KegelAlleys from "../components/KegelAlleys/KegelAlleys";
 import Contact from "../components/Contact/Contact";
 import Offerings from "../components/Offerings/Offerings";
 import TopBar from "../components/TopBar/TopBar";
+import AlternatingSections from "../components/AlternatingSections/AlternatingSections";
 
 const Home = () => {
   return (
     <>
       <Hero />
       <KegelAlleys />
+      <AlternatingSections />
       <Contact />
     </>
   );
