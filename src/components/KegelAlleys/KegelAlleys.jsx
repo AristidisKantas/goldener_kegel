@@ -1,4 +1,6 @@
 import React from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import styles from "./KegelAlleys.module.scss";
 import { Helmet } from "react-helmet-async";
 
@@ -44,18 +46,26 @@ const KegelAlleys = () => {
         </div>
 
         <div className={styles.gallery}>
-          <img
-            src="/assets/kegelalleys/image1.webp"
-            alt="Moderne Kegelbahn im Pub"
-          />
-          <img
-            src="/assets/kegelalleys/image1.webp"
-            alt="Kegelbahn mit Beleuchtung"
-          />
-          <img
-            src="/assets/kegelalleys/image1.webp"
-            alt="Gemütlicher Kegelbereich mit Bar"
-          />
+          <Carousel
+            showThumbs={false}
+            infiniteLoop
+            axis="horizontal"
+            preventMovementUntilSwipeScrollTolerance={true}
+            swipeScrollTolerance={50}
+          >
+            <div>
+              <img
+                src="/assets/kegelalleys/image1.webp"
+                alt="Moderne Kegelbahn im Pub"
+              />
+            </div>
+            <div>
+              <img
+                src="/assets/kegelalleys/apperol.webp"
+                alt="Gemütlicher Kegelbereich mit Bar"
+              />
+            </div>
+          </Carousel>
         </div>
       </section>
     </>

@@ -35,7 +35,7 @@
 
   h1 {
     font-size: 3rem;
-    color: white;
+    color: var(--secondary-color);
     margin-bottom: 1rem;
     text-shadow: 0 0 10px var(--primary-color);
   }
@@ -43,6 +43,7 @@
   p {
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
+    color: var(--secondary-color);
     text-shadow: 0 0 10px var(--primary-color);
   }
 }
