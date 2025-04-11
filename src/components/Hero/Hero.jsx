@@ -21,9 +21,19 @@ const Hero = () => {
             einer Vielfalt an handverlesenen Botanicals. Unsere saisonalen
             Cocktails bringen zu jeder Jahreszeit das gewisse Etwas ins Glas.
           </p>
+          <div className={styles.buttons}>
           <a href="#kegel-alleys" className={styles.cta}>
             Jetzt buchen
           </a>
+          <a
+            href="/gk_menu.pdf"
+            className={styles.cta}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Menu
+          </a>
+          </div>
         </div>
       </section>
     </>
