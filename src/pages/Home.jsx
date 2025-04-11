@@ -6,6 +6,7 @@ import Contact from "../components/Contact/Contact";
 import Offerings from "../components/Offerings/Offerings";
 import TopBar from "../components/TopBar/TopBar";
 import AlternatingSections from "../components/AlternatingSections/AlternatingSections";
+import Gallery from "../components/Gallery/Gallery";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Hero />
       <KegelAlleys />
       <AlternatingSections />
+      <Gallery />
       <Contact />
     </>
   );

@@ -52,6 +52,9 @@ const Navbar = () => {
         <a href="/#kegel-alleys" onClick={closeMenu}>
           Jetzt buchen
         </a>
+        <a href="/#gallery" onClick={closeMenu}>
+          Galerie
+        </a>
         <a href="#contact" onClick={closeMenu}>
           Kontakt
         </a>
@@ -61,3 +64,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
