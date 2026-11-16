@@ -19,7 +19,7 @@ const Datenschutz = () => (
     <p>
       Verantwortlich für die Datenverarbeitung auf dieser Website ist:
       <br />
-      <Todo>Vollständiger Name des Inhabers bzw. Firmenname</Todo>
+      Aggelos Roumpas
       <br />
       Goldener Kegel, Balthasarstraße 53, 50670 Köln
       <br />

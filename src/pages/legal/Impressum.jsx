@@ -7,16 +7,13 @@ const Impressum = () => (
     <p>
       Goldener Kegel
       <br />
-      <Todo>Vollständiger Name des Inhabers bzw. Firmenname mit Rechtsform</Todo>
+      Inhaber: Aggelos Roumpas
       <br />
       Balthasarstraße 53
       <br />
       50670 Köln
       <br />
       Deutschland
-    </p>
-    <p>
-      <Todo>Nur bei GmbH/UG o. Ä.: „Vertreten durch: Name des Geschäftsführers“ – sonst diese Zeile löschen</Todo>
     </p>
 
     <h2>Kontakt</h2>
@@ -39,7 +36,7 @@ const Impressum = () => (
 
     <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
     <p>
-      <Todo>Name</Todo>
+      Aggelos Roumpas
       <br />
       Balthasarstraße 53, 50670 Köln
     </p>
